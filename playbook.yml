@@ -1,0 +1,25 @@
+# - amazon.aws.ec2:
+#     key_name: devops
+#     instance_type: t2.micro
+#     image: ami-0e1d30f2c40c4c701
+#     wait: yes
+#     group: webserver
+#     count: 1
+#     vpc_subnet_id: default
+#     assign_public_ip: yes
+
+- name: Ansible test
+  hosts: localhost
+  tasks:
+  - name: launching AWS instance using Ansible
+    ec2:
+      key_name: devops
+      instance_type: t2.micro
+      image: ami-0e1d30f2c40c4c701
+      region: us-east-1
+      wait: yes
+      count: 1
+      vpc_subnet_id: subnet-0024dde10aeb623fb
+      assign_public_ip: yes
+      aws_access_key: AKIA52YKS4RDZPQ4SFXO
+      aws_secret_key: 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
