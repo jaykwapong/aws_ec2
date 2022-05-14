@@ -21,5 +21,5 @@
       count: 1
       vpc_subnet_id: subnet-0024dde10aeb623fb
       assign_public_ip: yes
-      aws_access_key: AKIA52YKS4RDZPQ4SFXO
-      aws_secret_key: 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
+      aws_access_key: 
+      aws_secret_key: 
